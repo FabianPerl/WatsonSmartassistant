@@ -223,11 +223,11 @@ GameObject:
   - component: {fileID: 1805725581}
   - component: {fileID: 1805725580}
   - component: {fileID: 1805725579}
-  - component: {fileID: 1805725583}
+  - component: {fileID: 1805725587}
   - component: {fileID: 1805725586}
   - component: {fileID: 1805725585}
   - component: {fileID: 1805725584}
-  - component: {fileID: 1805725587}
+  - component: {fileID: 1805725583}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -265,7 +265,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f5dc242ec7314953900dd5b1c9057f2, type: 2}
+  - {fileID: 2100000, guid: ae948b6c1ca85dd47a81eb9a1ff27d1b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -316,9 +316,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1805725578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d22462fec48640729f555337de674ae, type: 3}
+  m_Script: {fileID: 11500000, guid: fde80baf13213e243b8f6f22c3c3fbef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _assistantId: ef221967-e8f5-44d5-9111-032ef4f25973
+  _iamApikey: YOsvwrzscvuPPZjrQprTWIgCPPKxeIRXf9i6dHfJFnbX
 --- !u!114 &1805725584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,9 +330,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1805725578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9099937fa4ac04caebf1ec5f8e838637, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ec499f321b7c71448ab2b860c1d9a78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _iamApikey: dNBQdsULudL-dS16rDk-ubvxpAF7XkbbnPMT56qNVNFO
 --- !u!114 &1805725585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,9 +343,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1805725578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 285edff95e78d4efd962f14541df0d12, type: 3}
+  m_Script: {fileID: 11500000, guid: 2905b33af65f64c49aa4bfb08608667c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _iamApikey: fLoSfOfovYouyp-ep1UMBilGE3Kc4mRFou6TAEeSTw5E
 --- !u!114 &1805725586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +356,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1805725578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6f69a07f4cd74b689e9f6610b8ec78f, type: 3}
+  m_Script: {fileID: 11500000, guid: 243fc289057f66e4087a669b531358b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!82 &1805725587
