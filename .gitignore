@@ -1,0 +1,6 @@
+/Library
+/build
+/.vs
+/Temp
+.DS_Store
+*.meta
