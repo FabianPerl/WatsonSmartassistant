@@ -12,9 +12,6 @@ public class TTS_Watson : TTS
     /// <summary>
     /// The apikey for the assistent.
     /// </summary>
-    // Account University
-    //private readonly string _iamApikey = "8Ot_AWYL5sdLpTn9QSYLJCrj5TGUbTnKBPlhsp2aG1ef"
-    // Account Private
     [Tooltip("The IAM apikey")]
     [SerializeField]
     private string _iamApikey;
