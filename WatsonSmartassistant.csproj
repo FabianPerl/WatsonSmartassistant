@@ -5,9 +5,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C12CEEC6-100C-58A2-DE36-314E4DE5E40B}</ProjectGuid>
+    <ProjectGuid>{F889ED69-0146-C172-3A00-0A738EFDB1AD}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Unity.CollabProxy.Editor</AssemblyName>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
@@ -15,7 +15,7 @@
     <TargetFrameworkProfile></TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
-    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>WSAPlayer:21</UnityBuildTarget>
     <UnityVersion>2019.1.6f1</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -47,6 +47,15 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
     <Reference Include="Managed/UnityEngine/UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -70,12 +79,6 @@
     </Reference>
     <Reference Include="Managed/UnityEngine/UnityEngine.ClothModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Managed/UnityEngine/UnityEngine.ClusterInputModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Managed/UnityEngine/UnityEngine.ClusterRendererModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="Managed/UnityEngine/UnityEngine.CoreModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
@@ -230,35 +233,11 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.VR">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Graphs">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.OSXStandalone.Extensions">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UWP.Extensions">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
-      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Assets/Lib/Assistant/unity-sdk-core-0.2.0/Plugins/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
       <HintPath>Assets/Lib/Assistant/unity-sdk-core-0.2.0/Plugins/websocket-sharp.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Advertisements">
-      <HintPath>C:/Users/fperl/WatsonSmartassistant/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/fperl/WatsonSmartassistant/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
@@ -268,9 +247,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/fperl/WatsonSmartassistant/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-      <HintPath>C:/Users/fperl/WatsonSmartassistant/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.6f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
@@ -628,23 +604,47 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\AssemblyInfo.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Bootstrap.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\CollabAnalytics.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\CollabHistoryWindow.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\CollabToolbarButton.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\CollabToolbarWindow.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Presenters\CollabHistoryPresenter.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Views\BuildStatusButton.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Views\CollabHistoryDropDown.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Views\CollabHistoryDropDownItem.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Views\CollabHistoryItem.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Views\CollabHistoryItemFactory.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Views\CollabHistoryRevisionLine.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Views\HistoryProgressSpinner.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Views\ICollabHistoryItemFactory.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Views\PagedListView.cs" />
-    <Compile Include="Packages\com.unity.collab-proxy\Editor\Collab\Views\StatusView.cs" />
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{3A848AB7-9891-EDDA-D555-BF184C2F81F4}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
+      <Project>{C12CEEC6-100C-58A2-DE36-314E4DE5E40B}</Project>
+      <Name>Unity.CollabProxy.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="IBM.Cloud.SDK.csproj">
+      <Project>{06B8A700-35EE-577D-967F-202B9C8F3BC8}</Project>
+      <Name>IBM.Cloud.SDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.WindowsMR.Editor.csproj">
+      <Project>{D7E0F621-D98D-F122-678E-C02D028E5512}</Project>
+      <Name>Unity.XR.WindowsMR.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="WatsonUnitySDK.csproj">
+      <Project>{EF4F5D35-01C3-3D29-1170-4873727424CC}</Project>
+      <Name>WatsonUnitySDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{07A21C90-D344-AE1A-8456-9910C203B41A}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
+      <Project>{D6E266C6-3D1F-28C8-9FEB-2A01E44DBF77}</Project>
+      <Name>Unity.Analytics.DataPrivacy</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.WindowsMR.csproj">
+      <Project>{5E11E1B3-0410-B7BD-6D16-1A513F34657C}</Project>
+      <Name>Unity.XR.WindowsMR</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\Assistant.cs" />
+    <Compile Include="Assets\Scripts\Assistant_Watson.cs" />
+    <Compile Include="Assets\Scripts\Samantha.cs" />
+    <Compile Include="Assets\Scripts\STT.cs" />
+    <Compile Include="Assets\Scripts\STT_Watson.cs" />
+    <Compile Include="Assets\Scripts\TTS.cs" />
+    <Compile Include="Assets\Scripts\TTS_Watson.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Lib\Assistant\unity-sdk-3.1.0\Editor\Help\Working\SHFBContent.xml" />

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Cortexa : MonoBehaviour
+public class Samantha : MonoBehaviour
 {
     /// <summary>
     /// The assistant services which converts the speech to text, analyzes it in the cloud and sends a result
