@@ -86,8 +86,7 @@ public class TTS_Watson : TTS
         if (Application.isPlaying && clip != null)
         {
             _source.clip = clip;
-            SendToModel(outputText, _source.clip.length);
-            _source.Play();
+            SendToModel(outputText, clip);
             
             Runnable.Run(WaitSecondsAndExecute(_source.clip.length));
         }

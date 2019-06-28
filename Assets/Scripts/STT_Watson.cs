@@ -32,7 +32,11 @@ public class STT_Watson : STT
     void Awake()
     {
         int unused;
-        Microphone.GetDeviceCaps(_microphoneID, out unused, out _recordingHZ);
+
+        if (Microphone.devices.Length > 0)
+            Microphone.GetDeviceCaps(_microphoneID, out unused, out _recordingHZ);
+        else
+            Debug.Log("No Microphone initialized");
     }
 
     void Start()

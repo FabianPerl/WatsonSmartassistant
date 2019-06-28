@@ -7,16 +7,16 @@ public abstract class TTS : MonoBehaviour
     public abstract IEnumerator CreateService();
     public abstract void TextToSpeech(string output);
 
-    AnimationController animController;
+    private Animation_Controller _animController;
 
     void Awake()
     {
-        animController = GetComponent<AnimationController>();
+        _animController = GetComponent<Animation_Controller>();
     }
 
-    public void SendToModel(string text, float time)
+    public void SendToModel(string text, AudioClip clip)
     {
-        animController.speak(text, time);
+        _animController.Animate(text, clip);
     }
 
 }

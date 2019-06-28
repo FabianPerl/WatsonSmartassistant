@@ -62,7 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AnimationController.cs" />
+    <Compile Include="Assets\Scripts\Animation_Controller.cs" />
     <Compile Include="Assets\Scripts\Assistant.cs" />
     <Compile Include="Assets\Scripts\Assistant_Watson.cs" />
     <Compile Include="Assets\Scripts\Samantha.cs" />
